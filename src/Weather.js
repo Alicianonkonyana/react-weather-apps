@@ -4,10 +4,23 @@ export default function Weather() {
   return (
     <div className="Weather">
       <form>
-        <input type="search" placeholder="type a city" />
-        <button type="submit"> search</button>
+        <input
+          type="search"
+          className="enter-city"
+          placeholder="type a city"
+          autoFocus="on"
+        />
+        <button className="search-button" type="submit">
+          {" "}
+          search
+        </button>
       </form>
-      <h1>Lisbon</h1>
+
+      <h1>
+        {" "}
+        <strong>Lisbon</strong>
+      </h1>
+
       <ul>
         <li>Wednesday 12:00</li>
         <li> partly cloudy</li>
@@ -19,7 +32,10 @@ export default function Weather() {
             src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
             alt="weather icon"
           />
-          17°C
+          <strong>
+            <span className="temperature">17</span>
+          </strong>{" "}
+          <span className="unit">°C</span>
         </div>
         <div className="col-6">
           {" "}

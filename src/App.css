@@ -1,3 +1,13 @@
-.Weather {
-  border: 1px solid black;
+.App {
+  max-width: 700px;
+  margin: 0 auto;
+}
+body {
+  background-color: #f9f7fe;
+}
+footer {
+  text-align: center;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
 }
