@@ -1,6 +1,7 @@
 .Weather {
   background-color: white;
-  border: 1px solid black;
+  border: 1px solid white;
+  border-radius: 4px;
   color: rgb(112, 117, 122);
   font-family: arial, sans-serif;
   margin: 30px;
@@ -16,7 +17,6 @@
 }
 form {
   margin: 30px;
-
   border: none;
   border-radius: 6px;
   width: 80%;
@@ -27,6 +27,7 @@ form {
   font-size: 48px;
   position: relative;
   bottom: -16px;
+  color: black;
 }
 .Weather .unit {
   margin-left: -3px;
@@ -36,7 +37,7 @@ form {
 .enter-city {
   background: white;
   padding: 15px 30px;
-  border: none;
+  border: 1px solid black;
   font-size: 16px;
   margin-left: 5px;
   border-radius: 6px;
@@ -50,4 +51,8 @@ form {
   margin-left: 5px;
   border-radius: 6px;
   color: white;
+}
+.Weather canvas {
+  position: relative;
+  bottom: -18px;
 }
