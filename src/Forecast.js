@@ -9,7 +9,6 @@ export default function Forecast(props) {
   function handleResponse(response) {
     setForecast(response.data.daily);
     setLoaded(true);
-    console.log(response.data);
   }
   useEffect(() => {
     setLoaded(false);
@@ -23,9 +22,11 @@ export default function Forecast(props) {
             if (index < 5) {
               return (
                 <div className="col" key={index}>
-                  <ForecastDay data={dailyForecast} />;
+                  <ForecastDay data={dailyForecast} />
                 </div>
               );
+            } else {
+              return null;
             }
           })}
         </div>

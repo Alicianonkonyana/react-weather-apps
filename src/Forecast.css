@@ -1,5 +1,6 @@
 .Forecast {
   text-align: center;
+  margin: 12px;
 }
 .Forecast.min {
   color: rgb(112, 117, 122);
